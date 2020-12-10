@@ -7,7 +7,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'leafgarland/typescript-vim'
   Plug 'pangloss/vim-javascript'
   Plug 'liuchengxu/vim-which-key'
-  Plug 'ayu-theme/ayu-vim'
+  Plug 'drewtempelmeyer/palenight.vim'
   Plug 'scrooloose/nerdtree'
   Plug 'ryanoasis/vim-devicons'
   Plug 'itchyny/lightline.vim'
@@ -86,13 +86,13 @@ endif
 
 set background=dark
 let ayucolor="dark"
-colorscheme ayu
+colorscheme palenight
 
 " Plugins Configs
 
 "Lightline Config
 
-let g:lightline = { 'colorscheme': 'challenger_deep'}
+let g:lightline = { 'colorscheme': 'palenight'}
 
 " Coc Configs
 
