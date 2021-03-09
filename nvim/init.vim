@@ -5,6 +5,9 @@ call plug#begin('~/.vim/plugged')
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
  Plug 'preservim/nerdtree'
  Plug 'ryanoasis/vim-devicons'
+ Plug 'junegunn/goyo.vim'
+ Plug 'godlygeek/tabular'
+ Plug 'plasticboy/vim-markdown'
 call plug#end()
 " ====General Configs====
 let mapleader=" "
@@ -47,7 +50,11 @@ set shortmess+=c
 
 " Plugins shortcuts
 
+" NERDTree
 nnoremap <leader>e :NERDTreeToggle<CR>
 
+" Goyo
+nnoremap <leader>g :Goyo<CR>
+
 " ==== Plugins Configs====
-let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', "coc-vetur", "coc-python"]
+let g:coc_global_extensions = ['coc-rls', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', "coc-vetur", "coc-python"]
